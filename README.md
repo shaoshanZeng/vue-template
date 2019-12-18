@@ -1,16 +1,16 @@
-# vue-template
+# Vue项目开发初始化
 
-## Project setup
+## 安装依赖
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### 启动开发
 ```
-yarn serve
+yarn start
 ```
 
-### Compiles and minifies for production
+### 打包生产
 ```
 yarn build
 ```
