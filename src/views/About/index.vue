@@ -1,9 +1,17 @@
 <template>
-  <div class="about-container">关于</div>
+  <div class="about-container">
+    <Search />
+  </div>
 </template>
 
 <script>
-export default {};
+import Search from "@/components/About/Search";
+export default {
+  name: 'about',
+  components: {
+    Search
+  }
+};
 </script>
 
 
