@@ -1,13 +1,23 @@
 <template>
-  <div class="home-container">首页</div>
+  <div class="home-container">
+    <Header />
+    <Main />
+    <Footer />
+  </div>
 </template>
 
 <script>
-export default {};
+import Header from "@/components/Home/Header";
+import Main from "@/components/Home/Main";
+import Footer from "@/components/Home/Footer";
+export default {
+  components: {
+    Header,
+    Main,
+    Footer
+  }
+};
 </script>
 
 <style lang="scss">
-.home-container {
-  text-align: center;
-}
 </style>
