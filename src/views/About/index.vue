@@ -5,3 +5,10 @@
 <script>
 export default {};
 </script>
+
+
+<style lang="scss">
+.about-container {
+  text-align: center;
+}
+</style>
