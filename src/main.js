@@ -9,6 +9,11 @@ import 'normalize.css/normalize.css';
 // 加载路由权限
 import './permission';
 
+// 加载element-ui
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+Vue.use(ElementUI);
+
 // 加载过滤函数
 import * as filters from './filters';
 // 注册全局过滤器

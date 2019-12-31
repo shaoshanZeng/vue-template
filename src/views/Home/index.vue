@@ -1,22 +1,10 @@
 <template>
-  <div class="home-container">
-    <Header />
-    <Main />
-    <Footer />
-  </div>
+  <div class="home-container"></div>
 </template>
 
 <script>
-import Header from "@/components/Home/Header";
-import Main from "@/components/Home/Main";
-import Footer from "@/components/Home/Footer";
 export default {
-  name: 'home',
-  components: {
-    Header,
-    Main,
-    Footer
-  }
+  name: "home"
 };
 </script>
 
