@@ -3,8 +3,8 @@
     <div class="login-header">
       <loginHeader />
     </div>
-    <div class="login-center">
-      <loginCenter />
+    <div class="login-main">
+      <LoginMain />
     </div>
     <div class="login-footer">
       <loginFooter />
@@ -14,13 +14,13 @@
 
 <script>
 import loginHeader from "@/components/Login/LoginHeader.vue";
-import loginCenter from "@/components/Login/LoginCenter.vue";
+import LoginMain from "@/components/Login/LoginMain.vue";
 import loginFooter from "@/components/Login/LoginFooter.vue";
 export default {
   name: "login",
   components: {
     loginHeader,
-    loginCenter,
+    LoginMain,
     loginFooter
   }
 };
@@ -35,7 +35,7 @@ export default {
   .login-header {
     flex: 1;
   }
-  .login-center {
+  .login-main {
     flex: 3;
   }
   .login-footer {
