@@ -5,6 +5,8 @@ import store from "./store";
 
 // 加载样式初始化
 import 'normalize.css/normalize.css';
+// 导入全局样式
+import './styles/index.scss'
 
 // 加载路由权限
 import './permission';
@@ -20,7 +22,6 @@ import * as filters from './filters';
 Object.keys(filters).forEach(key => {
   Vue.filter(key, filters[key])
 });
-
 
 Vue.config.productionTip = false;
 

@@ -1,26 +1,20 @@
 <template>
   <div class="login-container">
-    <div class="login-header">
-      <loginHeader />
-    </div>
-    <div class="login-main">
-      <LoginMain />
-    </div>
-    <div class="login-footer">
-      <loginFooter />
-    </div>
+    <loginHeader class="login-header" />
+    <loginMain class="login-main" />
+    <loginFooter class="login-footer" />
   </div>
 </template>
 
 <script>
-import loginHeader from "@/components/Login/LoginHeader.vue";
-import LoginMain from "@/components/Login/LoginMain.vue";
-import loginFooter from "@/components/Login/LoginFooter.vue";
+import loginHeader from "./components/LoginHeader.vue";
+import loginMain from "./components/LoginMain.vue";
+import loginFooter from "./components/LoginFooter.vue";
 export default {
   name: "login",
   components: {
     loginHeader,
-    LoginMain,
+    loginMain,
     loginFooter
   }
 };
@@ -32,6 +26,7 @@ export default {
   flex-direction: column;
   width: 100vw;
   height: 100vh;
+  background: #f3f3f3;
   .login-header {
     flex: 1;
   }

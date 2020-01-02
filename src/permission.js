@@ -3,7 +3,7 @@ import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
 NProgress.configure({ showSpinner: false });
 
-const whiteList = ['/login', '/'];
+const whiteList = ['/login', '/home'];
 
 router.beforeEach((to, from, next) => {
     NProgress.start();
