@@ -12,6 +12,8 @@ export default {
 
 <style lang="scss">
 .layout-main-container {
+    height: 100%;
+    overflow-y: auto;
     padding: 10px;
     box-sizing: border-box;
 }

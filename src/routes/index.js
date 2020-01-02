@@ -26,7 +26,7 @@ const routes = [
         children: [
             {
                 path: 'home',
-                component: () => import(/* webpackChunkName: "home" */ "@/views/home"),
+                component: () => import(/* webpackChunkName: "home" */ "@/views/home/index.vue"),
                 meta: { title: 'Dashboard', icon: 'dashboard', affix: true }
             }
         ]
