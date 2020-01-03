@@ -15,6 +15,7 @@
             prefix-icon="el-icon-s-custom"
             placeholder="用户名"
             v-model="registerForm.username"
+            clearable
           ></el-input>
         </el-form-item>
         <el-form-item prop="password">
@@ -23,6 +24,8 @@
             prefix-icon="el-icon-lock"
             placeholder="密码"
             v-model="registerForm.password"
+            show-password
+            clearable
           ></el-input>
         </el-form-item>
         <el-form-item prop="confirmPwd">
@@ -31,6 +34,8 @@
             prefix-icon="el-icon-unlock"
             placeholder="确认密码"
             v-model="registerForm.confirmPwd"
+            show-password
+            clearable
           ></el-input>
         </el-form-item>
       </el-form>

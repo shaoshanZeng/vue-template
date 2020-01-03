@@ -1,10 +1,19 @@
 <template>
-  <div class="layout-header-container"></div>
+  <div class="layout-header-container">
+    <Title class="layout-header-title" />
+    <Menu class="layout-header-menu" />
+  </div>
 </template>
 
 <script>
+import Title from "./components/Title.vue";
+import Menu from "./components/Menu.vue";
 export default {
-  name: "LayoutHeader"
+  name: "LayoutHeader",
+  components: {
+    Title,
+    Menu
+  }
 };
 </script>
 
@@ -12,7 +21,15 @@ export default {
 .layout-header-container {
   height: 100%;
   width: 100%;
-  border-bottom: 1px solid #ccc;
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  .layout-header-title {
+    width: 220px;
+    height: 100%;
+  }
+  .layout-header-menu {
+    flex: 1;
+  }
 }
 </style>

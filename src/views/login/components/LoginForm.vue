@@ -11,7 +11,12 @@
       </div>
       <el-form :model="loginForm" :rules="rules" ref="loginForm">
         <el-form-item prop="username">
-          <el-input prefix-icon="el-icon-s-custom" placeholder="用户名" v-model="loginForm.username"></el-input>
+          <el-input
+            prefix-icon="el-icon-s-custom"
+            placeholder="用户名"
+            v-model="loginForm.username"
+            clearable
+          ></el-input>
         </el-form-item>
         <el-form-item prop="password">
           <el-input
@@ -19,6 +24,8 @@
             prefix-icon="el-icon-lock"
             placeholder="密码"
             v-model="loginForm.password"
+            show-password
+            clearable
           ></el-input>
         </el-form-item>
         <el-form-item>
@@ -82,7 +89,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
+
   .login-form-body {
     display: flex;
     flex-direction: column;

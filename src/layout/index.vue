@@ -36,7 +36,7 @@ export default {
     top: 0;
     left: 0;
     height: 100vh;
-    z-index: 9998;
+    z-index: 98;
   }
 
   .layout-header {
@@ -45,8 +45,9 @@ export default {
     left: 0;
     width: 100vw;
     height: 60px;
-    background: #f3f3f3;
-    z-index: 9999;
+    z-index: 99;
+    background: #fff;
+    box-shadow: 5px 5px 10px #ccc;
   }
 
   .layout-body {

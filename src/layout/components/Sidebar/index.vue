@@ -1,6 +1,8 @@
 <template>
   <div class="layout-sidebar-container">
-    <el-menu class="layout-sidebar-navmenu" :collapse="app.collapse" :collapse-transition="false"></el-menu>
+    <el-menu class="layout-sidebar-navmenu" :collapse="app.collapse" :collapse-transition="false">
+      <SubMenu />
+    </el-menu>
     <CollapseToggle class="layout-sidebar-collapse" />
   </div>
 </template>
@@ -8,10 +10,12 @@
 <script>
 import { mapState } from "vuex";
 import CollapseToggle from "./components/CollapseToggle.vue";
+import SubMenu from "./components/SubMenu.vue";
 export default {
   name: "LayoutSidebar",
   components: {
-    CollapseToggle
+    CollapseToggle,
+    SubMenu
   },
   data() {
     return {
@@ -32,7 +36,7 @@ export default {
   width: 100%;
   display: flex;
   flex-direction: column;
-  border-right: 1px solid #ccc;
+  box-shadow: 0 0 10px #ccc;
   .layout-sidebar-navmenu {
     width: 100%;
     flex: 1;
